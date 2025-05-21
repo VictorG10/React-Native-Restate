@@ -1,16 +1,19 @@
 import { Link } from "expo-router";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const Index = () => {
   return (
-    <View style={styles.container}>
-      <Text className="font-bold text-lg my-10">Welcome to ReState</Text>
+    <SafeAreaView style={styles.container}>
+      <Text className="font-bold  my-10 font-rubik text-3xl">
+        Welcome to ReState
+      </Text>
       <Link href="/sign-in">Sign In</Link>
       <Link href="/explore">Explore</Link>
       <Link href="/profile">Profile</Link>
       <Link href="/properties/1">Property</Link>
-    </View>
+    </SafeAreaView>
   );
 };
 
